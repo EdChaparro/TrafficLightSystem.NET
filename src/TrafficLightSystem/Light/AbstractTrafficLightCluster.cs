@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using IntrepidProducts.TLS.Light.Event;
 
 namespace IntrepidProducts.TLS.Light
 {
@@ -11,8 +10,6 @@ namespace IntrepidProducts.TLS.Light
     /// </summary>
     public abstract class AbstractTrafficLightCluster : ICluster
     {
-        public Guid Id { get; } = Guid.NewGuid();
-
         private IList<ITrafficLight> _trafficLights = new List<ITrafficLight>();
 
         protected IList<ITrafficLight> TrafficLights => _trafficLights.ToList();
