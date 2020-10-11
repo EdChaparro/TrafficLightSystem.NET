@@ -2,7 +2,7 @@ using System.Threading;
 using IntrepidProducts.TLS.Light;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace IntrepidProducts.TLS.Tests.Light
+namespace IntrepidProducts.TLS.Tests
 {
     [TestClass]
     public class TrafficLightControllerTest
