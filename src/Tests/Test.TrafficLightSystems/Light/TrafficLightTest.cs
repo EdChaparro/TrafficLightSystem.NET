@@ -39,7 +39,7 @@ namespace IntrepidProducts.TLS.Tests.Light
                 => receivedEvents.Add(e);
 
             light.State = TrafficLightState.Go;
-            Thread.Sleep(6000);
+            Thread.Sleep(4000);
 
             Assert.AreEqual(1, receivedEvents.Count);
             Assert.AreEqual(light.Id, receivedEvents[0].TrafficLightId);
