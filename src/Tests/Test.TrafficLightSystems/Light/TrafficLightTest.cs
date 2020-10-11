@@ -71,7 +71,7 @@ namespace IntrepidProducts.TLS.Tests.Light
 
             Assert.AreEqual(TrafficLightState.Go, light.State);
 
-            Thread.Sleep(10000);    //Wait 10 seconds
+            Thread.Sleep(7000);    //Wait for fail-safe to kick in
 
             Assert.AreEqual(TrafficLightState.StopThenGo, light.State);
         }
